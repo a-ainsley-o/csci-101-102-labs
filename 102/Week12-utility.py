@@ -33,3 +33,8 @@ def score_finder(list1, list2, string):
             print("OUTPUT", list1[num], "got a score of", score)
         else:
             print("OUTPUT player not found")
+
+def union(list1, list2):
+    list3 = list1 + list2
+    print(list3)
+    
