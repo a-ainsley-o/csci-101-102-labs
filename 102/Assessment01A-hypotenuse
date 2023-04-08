@@ -1,0 +1,10 @@
+#Addison Olstad
+#CSCI 102 - Section D
+#Assessment 01A
+#References: Zybooks
+#Time: 10 minutes
+
+positive_integer = int(input("A> "))
+positive2_integer = int(input("B> "))
+square = (positive2_integer ** 2) + (positive_integer ** 2)
+print("OUTPUT", square)

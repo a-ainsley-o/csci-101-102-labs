@@ -1,0 +1,70 @@
+#1. declare operand_one and operand_two varable
+#initializing eah to 0.0.
+
+#2. declare the variables sum, difference, product, quotient, and remainder,
+#and initialize each to 0.0.
+
+#3. prompt the user to input a real number as the first operand, assigning
+#it to your operand_one variable
+
+#4. prompt the user to input a real number as the second operand, assigning
+#it to your operand_two variable
+
+#5. Ask the user which operation they would like to have performed
+
+#6. Calculate the result of the operation
+
+#7. Output the result based on the user's choice. Include SIX decimal places for
+#addition, subtraction, and multiplication and ZERo decimal places for division
+
+#Hint: As before, for divison, use operand_one as the dividend and operand_two
+#as the divisor
+#Addison Olstad
+#CSCI102 - Section C
+#Assessment 03
+#Reference: Old calc assignment
+#Time: 30 minutes
+
+print("Welcome to our Enhanced Calculator!")
+print("Input the first operand.")
+operand_one = float(input("FIRST> "))
+print("Input the second operand.")
+operand_two = float(input("SECOND> "))
+
+print("Choose one of the following operations:")
+print("  1 - addition")
+print("  2 - subtraction")
+print("  3 - multiplication")
+print("  4 - division")
+
+operation = int(input("OPERATION> "))
+
+if operation == 1:
+    sum = operand_one + operand_two
+    print(f'OUTPUT {sum:.6f}')
+elif operation == 2:
+    difference = operand_one - operand_two
+    print(f'OUTPUT {difference:.6f}')
+elif operation == 3:
+    product = operand_one * operand_two
+    print(f'OUTPUT {product:.6f}')
+elif operation == 4:
+    quotient = operand_one // operand_two
+    remainder = operand_one % operand_two
+    print("OUTPUT", int(round(quotient, 0)))
+    print("OUTPUT", int(round(remainder, 0)))
+else:
+    print("You idiot, we only except values of 1, 2, 3, 4")
+
+print("Thank you for using our Enhanced Calculator!")
+
+
+
+
+
+
+
+
+
+
+

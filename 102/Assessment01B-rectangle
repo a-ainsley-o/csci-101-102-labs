@@ -1,0 +1,14 @@
+#given the total length of fencing,
+#what is the maximum rectangular area within which you can contain Shelia
+import math
+
+total_length = int(input("Yards of Fense: "))
+print("Total length of fence in yards: " , total_length)
+
+total_length_in_feet = total_length * 3
+print("Total length of fence in feet: " , total_length_in_feet)
+
+maximum_area = round(float(math.sqrt(total_length_in_feet)), 1)
+print("Maximum area produced:", maximum_area)
+
+
