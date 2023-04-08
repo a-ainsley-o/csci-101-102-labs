@@ -1,0 +1,31 @@
+#Addison Olstad
+#​CSCI 101 – Section C
+#Python Lab 2 
+#References: Studio 2, used as a base, and help from friend Tobin H.
+#Time:1 hr and 20 minutes
+
+ch_1 = str(input("WORD> "))
+ch_2 = str(input("WORD> "))
+ch_3 = str(input("WORD> "))
+ch_5 = str(input("WORD> "))
+ch_4 = input("WORD> ")
+
+end_ch_1 = ch_1[3:]
+beg_ch_1 = ch_1[:3]
+new_char = end_ch_1 + beg_ch_1
+
+new_char2 = ch_2[:-2]
+
+length_ch3 = len(ch_3)
+half_ch3 = int(length_ch3 / 2)
+new_char3 = ch_3[half_ch3:]
+
+half_one = ch_4[:2] + " "
+half_two = " " + ch_4[2:]
+
+if len(ch_5) == 6:
+    new_ch5 = ch_5[:1] + ch_5[4] + ch_5[3] + ch_5[2] + ch_5[5:]
+else:
+    new_ch5 = ch_5[:2] + ch_5[4] + ch_5[3] + ch_5[2]
+
+print("OUTPUT {}{}{}{}{}{}".format(half_one, new_char, new_char2, new_char3, new_ch5, half_two))

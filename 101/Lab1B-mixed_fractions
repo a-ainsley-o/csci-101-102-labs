@@ -1,0 +1,14 @@
+#Addison Olstad
+#Section C
+#References: zybooks, 16.9 and "https://stackoverflow.com/questions/42126794/getting-an-invalid-syntax-when-trying-to-perform-string-interpolation" to work out syntax error
+#Time Spent: 40 minutes
+
+
+
+numerator = int(input("numerator> "))
+denominator = int(input("denominator> "))
+
+whole_number = numerator // denominator
+new_num = numerator % denominator
+mixed_number = "{} {}/{}".format(whole_number, new_num, denominator)
+print("OUTPUT", mixed_number)
