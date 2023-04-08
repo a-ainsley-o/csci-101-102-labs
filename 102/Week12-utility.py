@@ -52,6 +52,16 @@ def not_in(list1, list2):
             list3.append(i)
     print(list3)
 
+def is_prime(integer):
+    if integer <= 1:
+        print("False")
+    elif integer == 2:
+        print("True")
+    else:
+        for i in range(2, integer):
+            if (integer % i) == 0:
+                return print("False")
+        return print("True")
 
 
 
