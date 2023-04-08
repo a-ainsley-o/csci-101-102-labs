@@ -19,3 +19,17 @@ def update_string(string1, string2, integer):
 def find_word_count(list1, string):
     num = list1.count(string)
     print(num)
+
+def score_finder(list1, list2, string):
+    if string in list1:
+        num = list1.index(string)
+        score = list2[num]
+        print("OUTPUT", list1[num], "got a score of", score)
+    else:
+        list1 = list(map(str.lower,list1))
+        if string in list1:
+            num = list1.index(string)
+            score = list2[num]
+            print("OUTPUT", list1[num], "got a score of", score)
+        else:
+            print("OUTPUT player not found")
