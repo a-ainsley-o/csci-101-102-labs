@@ -45,6 +45,12 @@ def intersect(list1, list2):
             list3.append(i)
     print(list3)
 
+def not_in(list1, list2):
+    list3 = []
+    for i in list1:
+        if i not in list2:
+            list3.append(i)
+    print(list3)
 
 
 
