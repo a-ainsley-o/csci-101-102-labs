@@ -15,3 +15,7 @@ def update_string(string1, string2, integer):
     for i in str_1_lines:
         empty_str += i
     print("OUTPUT", empty_str)
+
+def find_word_count(list1, string):
+    num = list1.count(string)
+    print(num)
