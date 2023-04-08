@@ -37,4 +37,22 @@ def score_finder(list1, list2, string):
 def union(list1, list2):
     list3 = list1 + list2
     print(list3)
+
+def intersect(list1, list2):
+    list3 = []
+    for i in list1:
+        if i in list2:
+            list3.append(i)
+    print(list3)
+
+
+
+
+
+
+
+
+
+
+
     
